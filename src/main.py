@@ -1,16 +1,22 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from src.movies import show_movies, add_movie
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def main():
+    while True:
+        print("1. Show movies")
+        print("2. Add movie")
+        print("0. Quit")
 
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            show_movies()
+        elif choice == "2":
+            add_movie()
+        elif choice == "0":
+            break
+        else:
+            print("Incorrect Input")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+if __name__ == "__main__":
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
