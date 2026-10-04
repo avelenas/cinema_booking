@@ -15,4 +15,11 @@ def show_movies():
         print(movie["title"])
         print(movie["genre"])
 
+def search_movie():
+    title = input("Enter title: ")
+    for movie in movies:
+        if title.lower() in movie["title"].lower():
+            print(movie["title"])
+            print(movie["genre"])
+
 

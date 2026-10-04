@@ -1,4 +1,4 @@
-from src.movies import show_movies, add_movie
+from src.movies import show_movies, add_movie, search_movie
 from src.booking import book_ticket, show_bookings, cancel_booking
 
 
@@ -9,6 +9,7 @@ def main():
         print("3. Book ticket")
         print("4. Show bookings")
         print("5. Cancel booking")
+        print("6. Search movie")
         print("0. Quit")
 
         choice = input("Enter your choice: ")
@@ -22,6 +23,8 @@ def main():
             show_bookings()
         elif choice == "5":
             cancel_booking()
+        elif choice == "6":
+            search_movie()
         elif choice == "0":
             break
         else:
