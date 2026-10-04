@@ -1,0 +1,16 @@
+bookings = []
+
+def book_ticket():
+    title = input("Enter title: ")
+    quantity = int(input("Enter quantity of tickets: "))
+    booking = {"title": title, "quantity": quantity,}
+    bookings.append(booking)
+    print("Successfully booked")
+
+def show_bookings():
+    if not bookings:
+        print("No bookings")
+        return
+    for booking in bookings:
+        print(f"{booking['title']} - {booking['quantity']}")
+
