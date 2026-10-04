@@ -14,3 +14,11 @@ def show_bookings():
     for booking in bookings:
         print(f"{booking['title']} - {booking['quantity']}")
 
+def cancel_booking():
+    title = input("Enter title: ")
+    for booking in bookings:
+        if booking['title'] == title:
+            bookings.remove(booking)
+            print("Successfully canceled")
+            return
+    print("Not found")
