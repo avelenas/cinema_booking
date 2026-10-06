@@ -1,6 +1,5 @@
-from src.movies import show_movies, add_movie
+from src.movies import show_movies, add_movie, add_to_favourites, show_favourites
 from src.booking import book_ticket, show_bookings, cancel_booking
-
 
 def main():
     while True:
@@ -9,6 +8,8 @@ def main():
         print("3. Book ticket")
         print("4. Show bookings")
         print("5. Cancel booking")
+        print("6. Add to favourites")
+        print("7. Show favourites")
         print("0. Quit")
 
         choice = input("Enter your choice: ")
@@ -22,6 +23,10 @@ def main():
             show_bookings()
         elif choice == "5":
             cancel_booking()
+        elif choice == "6":
+            add_to_favourites()
+        elif choice == "7":
+            show_favourites()
         elif choice == "0":
             break
         else:
