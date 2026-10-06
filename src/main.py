@@ -5,7 +5,7 @@ def main():
     while True:
         print("1. Movies")
         print("2. Booking")
-        print("3. Exit")
+        print("3. Book ticket")
         print("4. Show bookings")
         print("5. Cancel booking")
         print("6. Search movie")
