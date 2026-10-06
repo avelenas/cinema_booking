@@ -3,9 +3,9 @@ from src.booking import book_ticket, show_bookings, cancel_booking
 
 def main():
     while True:
-        print("1. Show movies")
-        print("2. Add movie")
-        print("3. Book ticket")
+        print("1. View movies")
+        print("2. Booking")
+        print("3. Favourites")
         print("4. Show bookings")
         print("5. Cancel booking")
         print("6. Search movie")
