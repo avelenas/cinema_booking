@@ -22,3 +22,8 @@ def cancel_booking():
             print("Successfully canceled")
             return
     print("Not found")
+
+def apply_discount(price):
+    return price * 0.9
+
+
